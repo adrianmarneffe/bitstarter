@@ -1,8 +1,8 @@
 var express = require('express');
-var fs = require "fs");
+var fs = require ("fs");
 var app = express.createServer(express.logger());
 var page = fs.readFileSync (index2.html);
-var htmlpage = buf.toString (page)
+var htmlpage = buf.toString (page);
 app.get('/', function(request, response) {
   response.send (htmlpage);
 });

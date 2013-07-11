@@ -1,5 +1,5 @@
 var express = require('express');
-var fs = require ("fs");
+var fs = require ('fs');
 var app = express.createServer(express.logger());
 
 
@@ -8,7 +8,7 @@ var page = fs.readFileSync('./index2.html');
 
 
 app.get('/', function(request, response) {
-  response.send ('page');
+  response.send (page);
 });
 
 var port = process.env.PORT || 5000;

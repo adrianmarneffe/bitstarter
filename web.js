@@ -9,7 +9,7 @@ var page = fs.readFileSync('./index.html');
 
 app.get('/', function(request, response) {
    response.writeHead (200, {'Content-Type': 'text/plain'}); 
-   response.end (page);
+   response.send (page);
 });
 
 var port = process.env.PORT || 5000;

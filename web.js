@@ -8,8 +8,8 @@ var page = fs.readFileSync('./index2.html');
 
 
 app.get('/', function(request, response) {
-response.writeHead (200, 'Content-Type': 'text/plain'); 
-   response.write (page);
+   response.writeHead (200, 'Content-Type': 'text/plain'); 
+   response.end (page);
 });
 
 var port = process.env.PORT || 5000;

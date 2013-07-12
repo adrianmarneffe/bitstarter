@@ -8,7 +8,7 @@ var page = fs.readFileSync('./index2.html');
 
 
 app.get('/', function(request, response) {
-   response.writeHead (200, 'Content-Type': 'text/plain'); 
+   response.writeHead (200, {'Content-Type': 'text/plain'}); 
    response.end (page);
 });
 
